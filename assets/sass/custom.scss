@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+$primary: chocolate;
+$purple:#cf649a;
+$dark:black;
+$light: white;
+$font-family-base: 'Great Vibes', cursive;
+
+$theme-colors: (
+  "primary":    $primary,
+  "light":      $light,
+  "dark":       $dark,
+  "purple":      $purple
+);
+
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.card{
+    @extend .card;
+    @extend .text-light;
+    @extend .bg-dark;
+}
+.card-title{
+    @extend .card-title;
+    color:$pink-500;
+}
+.btn{
+    @extend .text-light;
+}
+.container-flex{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
